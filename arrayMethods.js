@@ -62,3 +62,61 @@ let result1 = nums.some((el) => {
 
 // console.log(result1);
 
+let num1 = [1, 2, 3, 4];;
+let finalVal = num1.reduce((res, el) => res * el);
+// console.log(finalVal); 
+
+// Maximum in array
+let array = [1, 2, 3, 90, 4, 5, 6, 100, 7, 8, 9];
+let max = -1;
+
+// for(let i = 0; i < array.length; i++){
+//     if(max < array[i]){
+//         max = array[i];
+//     }
+// }
+
+// console.log(max);
+
+// USing reduce method
+
+let max1 = array.reduce((max, el) => {
+    if(max < el){
+        return el;
+    } else {
+        return max;
+    }
+});
+
+// console.log(max1);
+
+let arr2 = [10, 20, 30, 0, 40, 50];
+
+let ans1 = arr2.every((el) => {
+    return el % 10 == 0;
+});
+
+// console.log(ans1);
+
+let arr1 = [1, 2, 3, 4, 5, 6, 0, 7, 8];
+
+let min = arr1.reduce((res, el) => {
+    if(res < el){
+        return res;
+    } else {
+        return el;
+    }
+});
+
+// console.log(min);
+
+// console.log(...arr1); // 1 2 3 4 5 6 0 7 8
+
+// console.log(..."AyushSahu"); // A y u s h S a h u
+
+let odd = [1, 3, 5, 7, 9];
+let even = [2, 4, 6, 8, 10];
+
+let num2 = [...odd, ...even];
+
+// console.log(num2); // [1, 3, 5, 7, 9, 2, 4, 6, 8, 10]
