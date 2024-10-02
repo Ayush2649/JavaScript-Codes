@@ -31,3 +31,18 @@
 
 // console.dir(img.getAttribute("id"));
 
+// let links = document.querySelectorAll(".box a");
+
+// for(let link of links){
+//     link.style.color = "green";  // When we access the style property from the console we cannot access the css styling we can only see the inline styling
+// }
+
+// let heading = document.querySelector("h1");
+
+// heading.classList.add("green"); // Adds the functionalities of green to heading
+
+// heading.classList.remove("green"); // Removes the functionalities of green from heading
+
+// heading.classList.contains("underline"); // Returns true or false
+
+// heading.classList.toggle("green"); // If the attribute already exists in the heading then it wil drop and if not it will add it and return true if it si added and false if it is removed
