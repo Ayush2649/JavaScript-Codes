@@ -95,12 +95,44 @@
 //     h1.innerText = inp.value;
 // });
 
-let body = document.querySelector("body");
-let btn = document.createElement("button");
-body.append(btn);
-btn.innerText = "Click Me!!";
-let btn1 = document.querySelector("button");
+// let body = document.querySelector("body");
+// let btn = document.createElement("button");
+// body.append(btn);
+// btn.innerText = "Click Me!!";
+// let btn1 = document.querySelector("button");
 
-btn1.addEventListener("click", function() {
-    btn1.style.backgroundColor = "green";
-})
+// btn1.addEventListener("click", function() {
+//     btn1.style.backgroundColor = "green";
+// })
+
+// let div = document.querySelector("div");
+// let ul = document.querySelector("ul");
+// let lis = document.querySelectorAll("li");
+
+// div.addEventListener("click", function() {
+//     console.log("Div was clicked");
+// });
+
+// ul.addEventListener("click", function(event) {
+//     event.stopPropagation();
+//     console.log("ul was clicked");
+// });
+
+// for(li of lis){
+//     li.addEventListener("click", function(event) {
+//         event.stopPropagation(); // By using stopPropagation, we can stop the event bubbling
+//         console.log("li was clicked");
+//     })
+// };
+// This phenomenon is called Event Bubbling where if an internal child has event listener and its event is triggered then it also triggers the events of parent as well as external elements
+
+// let btn = document.querySelector("button");
+// let inp = document.querySelector("input");
+// let ul = document.querySelector("ul");
+
+// btn.addEventListener("click", function() {
+//     let item = document.createElement("li");
+//     item.innerText = inp.value;
+//     ul.appendChild(item);
+//     inp.value = "";
+// })
