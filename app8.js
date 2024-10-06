@@ -137,17 +137,92 @@
 //     inp.value = "";
 // })
 
-function one() {
-    return 1;
-}
+// function one() {
+//     return 1;
+// }
 
-function two() {
-    return one() + one();
-}
+// function two() {
+//     return one() + one();
+// }
 
-function three() {
-    let ans = two() + one();
-    console.log(ans);
-}
+// function three() {
+//     let ans = two() + one();
+//     console.log(ans);
+// }
 
-three();
+// three();
+
+// function saveToDb(data, success, failure){
+//     let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//     if(internetSpeed > 4){
+//         success();
+//     } else {
+//         failure();
+//     }
+// }
+
+// saveToDb("Ayush Sahu", () => { // Callback Hell
+//     console.log("Success : Your Data was saved");
+//     saveToDb("Hello World", () => {
+//         console.log("Success2 : Your Data2 was saved");
+//         saveToDb("Hii", () => {
+//             console.log("Success3 : Your Data3 was saved")
+//         }, () => {
+//             console.log("Failure3 : Weak connection : Data3 was not saved");
+//         });
+//     }, () => {
+//         console.log("Failure2 : Weak connection : Data2 was not saved");
+//     });
+// }, () => {
+//     console.log("Failure : Weak connection : Data was not saved");
+// });
+
+// function saveToDb(data){
+//     return new Promise((success, failure) => {
+//         let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//         if(internetSpeed > 4){
+//             success("success : data was saved");
+//         } else {
+//             failure("Failure : weak connection");
+//         }
+//     });
+// }
+
+// saveToDb("Ayush Sahu")
+// .then((result) => {
+//     console.log("Data was saved");
+//     console.log("Result of promise : " + result);
+//     return saveToDb("Pappu");
+// })
+// .then((result) => {
+//     console.log("Data2 was saved");
+//     console.log("Result of promise : " + result);
+//     return saveToDb("Chunnu");
+// })
+// .then((result) => {
+//     console.log("Data3 was saved");
+//     console.log("Result of promise : " + result);
+// })
+// .catch((error) => {
+//     console.log("Data was not saved");
+//     console.log("Error of promise : " + error);
+// });
+
+// let h1 = document.querySelector("h1");
+
+// function changeColor(color, delay, nextColorChange) {
+//     setTimeout(() => {
+//         h1.style.color = color;
+//         if(nextColorChange) nextColorChange();
+//     }, delay);
+// }
+
+// changeColor("red", 1000, () => {
+//     changeColor("orange", 1000, () => {
+//         changeColor("green", 1000, () => {
+//             changeColor("yellow", 1000, () => {
+//                 changeColor("blue", 1000);
+//             });
+//         });
+//     });
+// });
