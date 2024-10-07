@@ -226,3 +226,69 @@
 //         });
 //     });
 // });
+
+// let h1 = document.querySelector("h1");
+
+// function changeColor(color, delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             let num = Math.floor(Math.random() * 5) + 1;
+//             if(num > 3){
+//                 reject("Promise Rejected");
+//             }
+//             h1.style.color = color;
+//             console.log(`Color was changed to ${color}`);
+//             resolve("color changed");
+//         }, delay);
+//     });
+// }
+
+// async function demo() {
+//     try{
+//     await changeColor("red", 1000);
+//     await changeColor("orange", 1000);
+//     await changeColor("green", 1000);
+//     await changeColor("blue", 1000);
+//     } catch(err) {
+//         console.log(err);
+//         console.log("Error Caught");
+//     }
+
+//     let a = 5;
+//     console.log(a);
+//     console.log("New number : ", a + 5);
+// }
+
+// async function greet() {
+//     throw "Weak Connection";
+//     return "Hello World";    
+// }
+
+// greet()
+// .then((result) => {
+//     console.log("Promise was resolved");
+//     console.log("Result is : ", result);
+// })
+// .catch((err) => {
+//     console.log("Promise was rejected with the error : ", err);
+// })
+
+// let demo = async () => {
+//     return 5;
+// }
+
+// function getNum() {
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
+//             let num = Math.floor(Math.random() * 10) + 1;
+//             console.log(num);
+//             resolve();
+//         }, 1000);
+//     });
+// }
+
+// async function demo() {
+//     await getNum();
+//     await getNum();
+//     await getNum();
+// }
