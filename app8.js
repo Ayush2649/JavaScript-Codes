@@ -292,3 +292,14 @@
 //     await getNum();
 //     await getNum();
 // }
+
+let jsonRes = '{"fact":"The Cat Fanciers Association (CFA) recognizes 44 breeds of cats.","length":64}';
+let validRes = JSON.parse(jsonRes); // Parses Json data into Js data
+console.log(validRes);
+
+let students = {
+    name : "Ayush",
+    age : 20,
+}
+
+console.log(JSON.stringify(students)); // Parses JS data into Json data
