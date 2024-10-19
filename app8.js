@@ -306,6 +306,41 @@
 
 // let url = "https://catfact.ninja/fact";
 
+// async function getFacts(){
+//     try{
+//         let res = await fetch(url);
+//         let data = await res.json();
+//         console.log(data.fact);
+
+//         let res2 = await fetch(url);
+//         let data2 = await res2.json();
+//         console.log(data2.fact);
+//     } catch (e) {
+//         console.log("Error -> ", e);
+//     }
+// }
+
+// let btn = document.querySelector("button");
+// let para = document.querySelector("p");
+
+// btn.addEventListener("click", async () => {
+//     let fact = await getFacts();
+//     console.log(fact);
+//     para.innerText = fact;
+// });
+
+// let url = "https://catfact.ninja/fact";
+
+// async function getFacts() {
+//     try{
+//         let res = await axios.get(url);
+//         return res.data.fact;
+//     } catch (e) {
+//         console.log("Error -> ", e);
+//         return "No Data Found";
+//     }
+// }
+
 // fetch(url)
 // .then((res) => {
 //     return res.json()
