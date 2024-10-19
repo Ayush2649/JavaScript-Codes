@@ -293,13 +293,33 @@
 //     await getNum();
 // }
 
-let jsonRes = '{"fact":"The Cat Fanciers Association (CFA) recognizes 44 breeds of cats.","length":64}';
-let validRes = JSON.parse(jsonRes); // Parses Json data into Js data
-console.log(validRes);
+// let jsonRes = '{"fact":"The Cat Fanciers Association (CFA) recognizes 44 breeds of cats.","length":64}';
+// let validRes = JSON.parse(jsonRes); // Parses Json data into Js data
+// console.log(validRes);
 
-let students = {
-    name : "Ayush",
-    age : 20,
-}
+// let students = {
+//     name : "Ayush",
+//     age : 20,
+// }
 
-console.log(JSON.stringify(students)); // Parses JS data into Json data
+// console.log(JSON.stringify(students)); // Parses JS data into Json data
+
+// let url = "https://catfact.ninja/fact";
+
+// fetch(url)
+// .then((res) => {
+//     return res.json()
+// })
+// .then((data) => {
+//     console.log("Data1 fact : ", data.fact);
+//     return fetch(url);
+// })
+// .then((res) => {
+//     return res.json();
+// })
+// .then((data2) => {
+//     console.log("Data2 fact : ", data2.fact);
+// })
+// .catch((err) => {
+//     console.log(err);
+// })
